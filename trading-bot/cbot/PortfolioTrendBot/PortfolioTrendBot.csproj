@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="cTrader.Automate" Version="1.*-*" />
+    </ItemGroup>
+
+    <!-- Los componentes compartidos se COPIAN aqui con scripts/deploy_cbot.ps1.
+         No se enlazan por ruta relativa porque cTrader compila el proyecto
+         desde su propia carpeta en Documentos\cAlgo\Sources\Robots. -->
+</Project>

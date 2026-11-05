@@ -1,0 +1,34 @@
+# --- datos y artefactos de ejecucion ---
+/data/*
+!/data/.gitkeep
+*.jsonl
+*.sqlite
+*.sqlite-journal
+*.db
+
+# --- secretos ---
+.env
+config/sessions.json
+config/holidays.json
+config/news_blackout.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# --- .NET / cTrader ---
+bin/
+obj/
+*.user
+
+# --- editor / SO ---
+.vscode/*
+!.vscode/settings.json
+.idea/
+Thumbs.db
+desktop.ini

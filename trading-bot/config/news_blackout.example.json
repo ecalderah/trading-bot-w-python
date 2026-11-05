@@ -1,0 +1,17 @@
+{
+  "_comment": "Ventanas de bloqueo por noticias de alto impacto para XAUUSD (USD y oro). El cBot no puede descargar un calendario (AccessRights), asi que lee este archivo. El dashboard puede regenerarlo desde un feed y el sidecar puede empujar un flag 'blackout ahora' en tiempo real. Formato: 'from'/'to' en UTC. 'buffer_min_before'/'after' amplian cada evento recurrente.",
+  "timezone": "UTC",
+  "default_buffer_min_before": 5,
+  "default_buffer_min_after": 15,
+  "recurring": [
+    { "name": "US CPI",            "day": "monthly-2nd-wed-ish", "time_utc": "12:30", "note": "revisar fecha exacta cada mes" },
+    { "name": "US NFP",            "day": "monthly-1st-fri",     "time_utc": "12:30" },
+    { "name": "FOMC decision",     "day": "8x-year",             "time_utc": "18:00", "buffer_min_after": 90 },
+    { "name": "FOMC press conf",   "day": "8x-year",             "time_utc": "18:30", "buffer_min_after": 60 },
+    { "name": "US PPI",            "day": "monthly",             "time_utc": "12:30" },
+    { "name": "US retail sales",   "day": "monthly",             "time_utc": "12:30" }
+  ],
+  "one_off": [
+    { "name": "ejemplo evento puntual", "from": "2026-09-10T12:30:00Z", "to": "2026-09-10T13:00:00Z" }
+  ]
+}

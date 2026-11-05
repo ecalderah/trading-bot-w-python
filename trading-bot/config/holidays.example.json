@@ -1,0 +1,16 @@
+{
+  "_comment": "Dias sin operar y medias sesiones. Copiar a holidays.json y mantener al dia cada año. 'closed' = no operar en todo el dia (UTC). 'early_close_utc' = cerrar todo y no abrir nuevas a partir de esa hora UTC. El cBot lee este archivo desde la carpeta de config; el dashboard tambien lo usa para marcar huecos en los backtests.",
+  "timezone": "UTC",
+  "holidays": [
+    { "date": "2026-01-01", "closed": true,  "note": "Año Nuevo" },
+    { "date": "2026-04-03", "closed": true,  "note": "Viernes Santo" },
+    { "date": "2026-05-25", "early_close_utc": "17:00", "note": "Memorial Day (US)" },
+    { "date": "2026-07-03", "early_close_utc": "17:00", "note": "vispera 4 de julio (US)" },
+    { "date": "2026-09-07", "early_close_utc": "17:00", "note": "Labor Day (US)" },
+    { "date": "2026-11-26", "closed": true,  "note": "Thanksgiving (US)" },
+    { "date": "2026-11-27", "early_close_utc": "18:00", "note": "dia despues de Thanksgiving" },
+    { "date": "2026-12-24", "early_close_utc": "18:00", "note": "Nochebuena" },
+    { "date": "2026-12-25", "closed": true,  "note": "Navidad" },
+    { "date": "2026-12-31", "early_close_utc": "18:00", "note": "Nochevieja" }
+  ]
+}

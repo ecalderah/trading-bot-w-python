@@ -1,0 +1,45 @@
+{
+  "_comment": "Ventanas de sesion para el cBot y el dashboard. Copiar a sessions.json. Las horas se interpretan en la zona horaria 'tz' (identificador de Windows), el horario de verano se aplica solo. XAUUSD: Asia suele ser mal negocio (rango estrecho, spread ancho); el nucleo es el solape Londres-NY.",
+  "instrument": "XAUUSD",
+  "sessions": [
+    {
+      "name": "asia",
+      "enabled": false,
+      "tz": "Tokyo Standard Time",
+      "open": "09:00",
+      "close": "15:00",
+      "no_new_trades_last_minutes": 20,
+      "flatten_before_close_minutes": 5,
+      "max_trades": 3,
+      "max_loss_pct": 1.0,
+      "max_spread_pips": 40
+    },
+    {
+      "name": "europa",
+      "enabled": true,
+      "tz": "GMT Standard Time",
+      "open": "08:00",
+      "close": "12:00",
+      "no_new_trades_last_minutes": 20,
+      "flatten_before_close_minutes": 5,
+      "max_trades": 5,
+      "max_loss_pct": 1.5,
+      "max_spread_pips": 25
+    },
+    {
+      "name": "ny",
+      "enabled": true,
+      "tz": "Eastern Standard Time",
+      "open": "08:00",
+      "close": "12:00",
+      "no_new_trades_last_minutes": 20,
+      "flatten_before_close_minutes": 5,
+      "max_trades": 5,
+      "max_loss_pct": 1.5,
+      "max_spread_pips": 25
+    }
+  ],
+  "flatten_at_end_of_last_session": true,
+  "trade_on_friday": true,
+  "friday_close_early_utc": "20:00"
+}
